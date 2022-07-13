@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/background_main">
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_iba_cocktails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+
+            android:background="@drawable/background_rectangle_gradient"
+
+            android:drawableStart="@drawable/ic_short_drink_btn"
+            android:paddingStart="24dp"
+            android:drawablePadding="24dp"
+
+            android:text="@string/const_iba_cocktail"
+            style="@style/Menu"
+            android:textAlignment="viewStart"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_all_cocktails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+
+            android:background="@drawable/background_rectangle"
+            android:backgroundTint="@color/white"
+
+            android:drawableStart="@drawable/ic_middle_drink_btn"
+            android:drawableTint="@color/main"
+            android:paddingStart="24dp"
+            android:drawablePadding="24dp"
+
+            android:text="@string/const_others"
+            style="@style/Menu"
+            android:textColor="@color/main"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_favourites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="12dp"
+            android:layout_marginHorizontal="16dp"
+
+            android:drawableStart="@drawable/ic_heart"
+            android:drawableTint="@color/main"
+            android:paddingStart="25dp"
+            android:drawablePadding="24dp"
+
+            android:background="@drawable/background_rectangle"
+            android:backgroundTint="@color/white"
+
+            android:text="@string/const_favourite"
+            style="@style/Menu"
+            android:textColor="@color/main"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">justBar</string>
+
+    <!-- Const Text -->
+    <string name="const_app_name">justBAR</string>
+    <string name="const_iba_cocktail">IBA Cocktails</string>
+    <string name="const_others">Others (Search + Filter)</string>
+    <string name="const_favourite">Favourite</string>
+
+    <!-- Buttons -->
+    <string name="btn_base">Основа</string>
+    <string name="btn_sorting_by">Отсортировать по...</string>
+
+    <!-- Hints -->
+    <string name="hint_search">Поиск</string>
+</resources>
