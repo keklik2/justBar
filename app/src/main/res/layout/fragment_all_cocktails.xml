@@ -18,8 +18,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        style="@style/Titles"
-        tools:text="All Cocktails"
+        style="@style/toolbarTitle"
+        android:text="@string/const_all_cocktails"
         android:gravity="center"/>
 
     <androidx.appcompat.widget.AppCompatImageButton
@@ -86,7 +86,7 @@
         android:drawableTint="@color/main"
         android:drawablePadding="8dp"
         android:text="@string/btn_sorting_by"
-        style="@style/Titles"
+        style="@style/title"
         android:textColor="@color/main"
         android:textSize="12sp"
 
@@ -101,13 +101,12 @@
         android:layout_margin="12dp"
         android:paddingHorizontal="24dp"
 
-        android:background="@drawable/background_rectangle"
-        android:backgroundTint="@color/main"
+        android:background="@drawable/background_rectangle_gradient"
 
         android:drawablePadding="8dp"
         android:drawableStart="@drawable/ic_sort"
         android:text="@string/btn_base"
-        style="@style/Titles"
+        style="@style/title"
         android:textSize="12sp"
 
         app:layout_constraintTop_toBottomOf="@+id/til_search"

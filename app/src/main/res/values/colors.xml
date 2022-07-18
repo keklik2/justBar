@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- Custom colors -->
-    <color name="main">#1A1A1A</color>
+    <color name="main">#212121</color>
     <color name="secondary">#7A7A7A</color>
     <color name="secondary_light">#D9D9D9</color>
     <color name="dark_red">#782323</color>

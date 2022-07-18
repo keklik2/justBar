@@ -1,9 +1,223 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
 
     android:background="@drawable/background_main">
+
+    <TextView
+        android:id="@+id/tv_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        style="@style/toolbarTitle"
+        android:text="@string/const_cocktail_detail"
+        android:gravity="center"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+
+        android:src="@drawable/ic_back"
+        android:background="@null"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_main_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_like"
+
+                    tools:text="Long Island Ice Tea"
+
+                    style="@style/title"
+                    android:textSize="30sp"/>
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/btn_like"
+                    android:layout_width="50dp"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="1:1"
+                    android:layout_margin="12dp"
+                    android:padding="12dp"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    android:background="@drawable/background_circle"
+                    android:src="@drawable/ic_heart"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_iba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/btn_like"
+                    app:layout_constraintStart_toStartOf="@+id/btn_like"
+                    app:layout_constraintEnd_toEndOf="@+id/btn_like"
+
+                    android:src="@drawable/ic_iba_mark"/>
+
+                <TextView
+                    android:id="@+id/tv_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="8dp"
+
+                    app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    android:background="@drawable/background_rectangle"
+                    android:backgroundTint="@color/white"
+
+                    tools:text="~36%"
+                    style="@style/degree"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_milis"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+
+                    app:layout_constraintTop_toTopOf="@id/tv_percent"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_percent"
+                    app:layout_constraintStart_toEndOf="@id/tv_percent"
+
+                    tools:text="110ml"
+                    style="@style/secondary"
+                    android:textColor="@color/white"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_ingridients_const"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                android:gravity="center_vertical"
+
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_list"
+
+                app:layout_constraintTop_toBottomOf="@id/layout_main_info"
+
+                android:text="@string/const_ingridients"
+                style="@style/title"/>
+
+            <TextView
+                android:id="@+id/tv_ingridients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="12dp"
+
+                app:layout_constraintTop_toBottomOf="@+id/tv_ingridients_const"
+
+                style="@style/entry"
+                tools:text="White Rom - 15ml\nVodka - 15ml\nTequila - 15ml\nGin - 15mk\nQuantro - 15ml\nSugar Syrup - 15ml\nLemon Juce - 30ml\nCoke - 80ml"/>
+
+            <TextView
+                android:id="@+id/tv_receipe_const"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                android:gravity="center_vertical"
+
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_receipt"
+
+                app:layout_constraintTop_toBottomOf="@id/tv_ingridients"
+
+                android:text="@string/const_receipe"
+                style="@style/title"/>
+
+            <TextView
+                android:id="@+id/tv_receipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="20dp"
+                android:paddingHorizontal="12dp"
+
+                app:layout_constraintTop_toBottomOf="@+id/tv_receipe_const"
+
+                style="@style/entry"
+                tools:text="Какой-то рецепт какого-то кокйтеля и ещё пара строк и ещё пара строк и ещё пара строк и ещё пара строк и ещё пара строк"/>
+
+            <TextView
+                android:id="@+id/tv_suggestions_const"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+
+                android:gravity="center_vertical"
+
+                android:drawablePadding="8dp"
+                android:drawableStart="@drawable/ic_add"
+
+                app:layout_constraintTop_toBottomOf="@id/tv_receipe"
+
+                android:text="@string/const_suggestions"
+                style="@style/title"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_suggestions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="20dp"
+
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+
+                tools:listitem="@layout/item_cocktail"
+
+                app:layout_constraintTop_toBottomOf="@+id/tv_suggestions_const"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

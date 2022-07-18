@@ -56,7 +56,7 @@
             app:layout_constraintStart_toEndOf="@+id/iv_drink"
 
             tools:text="Daiquiri"
-            style="@style/Titles"/>
+            style="@style/title"/>
 
         <TextView
             android:id="@+id/tv_percent"
@@ -74,7 +74,7 @@
             android:backgroundTint="@color/white"
 
             tools:text="~36%"
-            style="@style/Degrees"/>
+            style="@style/degree"/>
 
         <TextView
             android:id="@+id/tv_milis"
@@ -87,7 +87,7 @@
             app:layout_constraintEnd_toEndOf="@id/tv_percent"
 
             tools:text="110ml"
-            style="@style/Secondary"
+            style="@style/secondary"
             android:textColor="@color/white"/>
 
         <TextView
@@ -100,12 +100,12 @@
             app:layout_constraintStart_toEndOf="@+id/iv_drink"
 
             tools:text="alc: Daiquiri\ntaste: Sour"
-            style="@style/Secondary"/>
+            style="@style/secondary"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.appcompat.widget.AppCompatImageButton
-        android:id="@+id/like_btn_unchecked"
+        android:id="@+id/btn_like"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         app:layout_constraintDimensionRatio="1:1"

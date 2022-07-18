@@ -29,8 +29,8 @@
             android:paddingStart="24dp"
             android:drawablePadding="24dp"
 
-            android:text="@string/const_iba_cocktail"
-            style="@style/Menu"
+            android:text="@string/const_iba_cocktails"
+            style="@style/menu"
             android:textAlignment="viewStart"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -49,7 +49,7 @@
             android:drawablePadding="24dp"
 
             android:text="@string/const_others"
-            style="@style/Menu"
+            style="@style/menu"
             android:textColor="@color/main"/>
 
         <androidx.appcompat.widget.AppCompatButton
@@ -69,7 +69,7 @@
             android:backgroundTint="@color/white"
 
             android:text="@string/const_favourite"
-            style="@style/Menu"
+            style="@style/menu"
             android:textColor="@color/main"/>
 
     </LinearLayout>
