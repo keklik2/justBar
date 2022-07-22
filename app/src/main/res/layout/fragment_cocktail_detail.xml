@@ -141,7 +141,7 @@
 
                 app:layout_constraintTop_toBottomOf="@id/layout_main_info"
 
-                android:text="@string/const_ingridients"
+                android:text="@string/const_ingredients"
                 style="@style/title"/>
 
             <TextView
@@ -170,7 +170,7 @@
 
                 app:layout_constraintTop_toBottomOf="@id/tv_ingridients"
 
-                android:text="@string/const_receipe"
+                android:text="@string/const_recipe"
                 style="@style/title"/>
 
             <TextView

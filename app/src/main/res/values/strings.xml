@@ -3,19 +3,26 @@
 
     <!-- Const Text -->
     <string name="const_app_name">justBAR</string>
-    <string name="const_others">Прочее (Поиск и сортировка)</string>
-    <string name="const_favourite">Избранное</string>
-    <string name="const_cocktail_detail">Информация о коктейле</string>
-    <string name="const_iba_cocktails">Коктейли IBA</string>
-    <string name="const_all_cocktails">Все Коктейли</string>
-    <string name="const_ingridients">Ингридиенты</string>
-    <string name="const_receipe">Рецепт</string>
-    <string name="const_suggestions">Рекомендации</string>
+    <string name="const_others">Others (Search and Sorting)</string>
+    <string name="const_favourite">Favourite</string>
+    <string name="const_cocktail_detail">Cocktail info</string>
+    <string name="const_iba_cocktails">IBA Cocktails</string>
+    <string name="const_all_cocktails">All Cocktails</string>
+    <string name="const_ingredients">Ingredients</string>
+    <string name="const_recipe">Recipe</string>
+    <string name="const_suggestions">Suggestions</string>
 
     <!-- Buttons -->
-    <string name="btn_base">Основа</string>
-    <string name="btn_sorting_by">Отсортировать по...</string>
+    <string name="btn_base">Base</string>
+    <string name="btn_sorting_by">Sort by...</string>
 
     <!-- Hints -->
     <string name="hint_search">Поиск</string>
+
+    <!-- Taste Enum values -->
+    <string name="taste_sweet">Sweet</string>
+    <string name="taste_sour">Sour</string>
+    <string name="taste_sweet_sour">Sweet-Sour</string>
+    <string name="taste_strong">Strong</string>
+    <string name="taste_salty">Salty</string>
 </resources>

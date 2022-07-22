@@ -20,12 +20,19 @@
         <entry key="..\:/DigexCo/justBar/app/src/main/res/drawable-v24/background_circle.xml" value="0.244" />
         <entry key="..\:/DigexCo/justBar/app/src/main/res/drawable-v24/background_rectangle_gradient.xml" value="0.244" />
         <entry key="..\:/DigexCo/justBar/app/src/main/res/drawable/background_rectangle.xml" value="0.244" />
+        <entry key="..\:/DigexCo/justBar/app/src/main/res/layout/activity_main.xml" value="0.18854166666666666" />
         <entry key="..\:/DigexCo/justBar/app/src/main/res/layout/fragment_all_cocktails.xml" value="0.36666666666666664" />
         <entry key="..\:/DigexCo/justBar/app/src/main/res/layout/fragment_cocktail_detail.xml" value="0.33" />
         <entry key="..\:/DigexCo/justBar/app/src/main/res/layout/fragment_iba_cocktails.xml" value="0.36666666666666664" />
         <entry key="..\:/DigexCo/justBar/app/src/main/res/layout/fragment_loading_screen.xml" value="0.36666666666666664" />
         <entry key="..\:/DigexCo/justBar/app/src/main/res/layout/fragment_main_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/DigexCo/justBar/app/src/main/res/layout/item_cocktail.xml" value="0.36666666666666664" />
+        <entry key="..\:/DigexCo/justBar/architecture/src/main/res/drawable-v24/ic_app_logo_black.xml" value="0.1" />
+        <entry key="..\:/DigexCo/justBar/architecture/src/main/res/drawable-v24/ic_app_logo_white.xml" value="0.1" />
+        <entry key="..\:/DigexCo/justBar/architecture/src/main/res/drawable/background_rectangle.xml" value="0.1" />
+        <entry key="..\:/DigexCo/justBar/architecture/src/main/res/drawable/ic_account_dark_gray.xml" value="0.1" />
+        <entry key="..\:/DigexCo/justBar/architecture/src/main/res/drawable/ic_add_white.xml" value="0.1" />
+        <entry key="..\:/DigexCo/justBar/architecture/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
       </map>
     </option>
   </component>
